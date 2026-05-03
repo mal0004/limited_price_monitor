@@ -1,0 +1,21 @@
+{
+  "name": "limited_price_monitor",
+  "version": "1.0.0",
+  "description": "Discord bot for Roblox Limited repricing recommendations",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "register-commands": "node scripts/registerCommands.js",
+    "migrate": "node src/db/migrate.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "discord.js": "^14.21.0"
+  }
+}
